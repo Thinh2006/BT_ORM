@@ -1,0 +1,1546 @@
+{
+	"info": {
+		"_postman_id": "440ccde6-0ecb-4895-bdb8-b131bc3fd7aa",
+		"name": "BTORM_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28190222"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"nguyenvanVui@gmail.com\",\n    \"mat_khau\": \"nguyenvanvui\",\n    \"ho_ten\": \"Nguyễn Văn Vui Vẻ\",\n    \"tuoi\": 55,\n    \"anh_dai_dien\": \"/images/avatarVui.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Log In",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"nguyenvannam@gmail.com\",\n    \"mat_khau\": \"nguyenvannam\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/logIn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"logIn"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/getInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getInfo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Saved Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/getSavedImages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getSavedImages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Created Image",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/user/getCreatedImages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"getCreatedImages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Remove Image",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hinh_id\": 23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/removeImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"removeImage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ten_hinh\": \"Hình abc\",\n    \"duong_dan\": \"/images/hinhabc.jpg\",\n    \"mo_ta\": \"Hình mô tả abc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/createImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"createImage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"nguyenvanVe@gmail.com\",\n    \"mat_khau\": \"nguyenvanve\",\n    \"ho_ten\": \"Nguyễn Văn Vẻ\",\n    \"tuoi\": 55,\n    \"anh_dai_dien\": \"/images/avatarVe.jpg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/updateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"updateUser"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Image List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/image/getImageList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"image",
+						"getImageList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Image By Name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ten_hinh\": \"Hình 1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/image/getImageByName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"image",
+						"getImageByName"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Image Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hinh_id\": 13\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/image/getImageInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"image",
+						"getImageInfo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Comment Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hinh_id\": 13\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/image/getCommentInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"image",
+						"getCommentInfo"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Check Saved Image",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hinh_id\": 13\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/image/checkSavedImage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"image",
+						"checkSavedImage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsibmd1b2lfZHVuZ19pZCI6NiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwibWF0X2toYXUiOiIkMmIkMTAkdGRxNDVXZUZ2bjNQNE9FV21BZTBWZVBiSFVzTGZFQVhWT3RveHUva2hXZE5oMHIzdGNyNksiLCJob190ZW4iOiJOZ3UgbmjGsCBiw7IiLCJ0dW9pIjoyMywiYW5oX2RhaV9kaWVuIjoiL2ltYWdlcy9hdmF0YXJhYmMuanBnIn19LCJpYXQiOjE2OTkyNjEyMzcsImV4cCI6MTczMDgxODgzN30.G_bzfq3qtcGvjQ2g6uHJB8RAuSRfFzc9IK2_80kotSI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hinh_id\": 13,\n    \"noi_dung\": \"Hình xấu quắc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/image/storeComment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"image",
+						"storeComment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImRhdGEiOnsidXNlcl9pZCI6NywiZnVsbF9uYW1lIjoiYWJjIiwiZW1haWwiOiJhYmNAZ21haWwuY29tIiwiYXZhdGFyIjoiIiwicGFzc193b3JkIjoiJDJiJDEwJDdYbmsuNWtMeEJ3Ui5vblVjMnF0VWViS2VxMWJjeEg5d0IzRGlNcDdMM3dPaS9pRklqTC9hIiwiZmFjZV9hcHBfaWQiOiIiLCJyb2xlIjoidXNlciJ9fSwiaWF0IjoxNjk4MzI4MzI3LCJleHAiOjIwMTM5MDQzMjd9.DfYobFQzTt2QLSUNO1Tejb4PCbITq7iIHy61n51o9Gg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hinh_id\": 16,\n    \"nguoi_dung_id\": 2,\n    \"noi_dung\": \"Hình đẹp quá\"\n}   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/image/storeComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"image",
+								"storeComment"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7d-YPtFIYeSU0XTYNDesMXlkNrVjBA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 06 Nov 2023 08:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"binh_luan_id\": 11,\n    \"nguoi_dung_id\": 2,\n    \"hinh_id\": 16,\n    \"ngay_binh_luan\": \"2023-11-06T00:00:00.000Z\",\n    \"noi_dung\": \"Hình đẹp quá\"\n}"
+				}
+			]
+		}
+	]
+}
