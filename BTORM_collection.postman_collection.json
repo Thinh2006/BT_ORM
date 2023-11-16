@@ -20,7 +20,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"nguyenvanVui@gmail.com\",\n    \"mat_khau\": \"nguyenvanvui\",\n    \"ho_ten\": \"Nguyễn Văn Vui Vẻ\",\n    \"tuoi\": 55,\n    \"anh_dai_dien\": \"/images/avatarVui.jpg\"\n}",
+					"raw": "{\n    \"email\": \"@gmail.com\",\n    \"mat_khau\": \"\",\n    \"ho_ten\": \"\",\n    \"tuoi\": ,\n    \"anh_dai_dien\": \"/images/avatarVui.jpg\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
